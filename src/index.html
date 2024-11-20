@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nanggulan</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link href="../dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav
+      id="navbar"
+      class="fixed top-0 left-0 right-0 z-50 bg-white navbar-transparent"
+    >
+      <div
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a href="#" class="text-xl font-bold" id="navbar-brand">Nanggulan</a>
+        <div id="navbar-links" class="space-x-4">
+          <a data-target="about" class="navbar-link cursor-pointer">Tentang</a>
+          <a data-target="kuliner" class="navbar-link cursor-pointer"
+            >Kuliner</a
+          >
+          <a data-target="wisata" class="navbar-link cursor-pointer">Wisata</a>
+          <a data-target="contact" class="navbar-link cursor-pointer"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="relative h-screen bg-cover bg-center"
+      style="background-image: url('assets/images/nanggulan.jpg')"
+    >
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+      <div
+        class="relative flex items-center justify-center h-full container mx-auto px-6 text-center"
+      >
+        <div>
+          <h1 class="text-4xl md:text-6xl font-bold hero-title">
+            Selamat Datang di<br />
+            Kecamatan Nanggulan
+          </h1>
+          <p class="mt-4 text-lg">
+            Nikmati keindahan alam dan kuliner khas desa
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="h-screen flex items-center">
+      <div class="container mx-auto px-6 flex gap-12">
+        <div class="w-full md:w-1/2 text-center md:text-left">
+          <h2 class="text-3xl font-semibold">Tentang Nanggulan</h2>
+          <p class="mt-4 mb-6 leading-relaxed text-justify">
+            <!-- Add text-justify class -->
+            Terletak di jantung Kulon Progo, Yogyakarta, Kecamatan Nanggulan
+            menawarkan pesona alam yang memikat dan kebudayaan yang kaya.
+            Dikelilingi oleh hamparan sawah hijau dan pegunungan Menoreh yang
+            megah, Nanggulan memberikan pengalaman wisata yang autentik dan
+            tenang, jauh dari hiruk pikuk kota. Kecamatan ini tidak hanya
+            memiliki pemandangan alam yang indah, tetapi juga tempat-tempat
+            wisata budaya dan tradisional yang menggambarkan kehangatan
+            masyarakat lokal. Mulai dari wisata kuliner khas hingga kegiatan
+            seni dan kerajinan tangan yang diwariskan secara turun-temurun,
+            Nanggulan adalah destinasi yang sempurna bagi Anda yang ingin
+            merasakan nuansa Yogyakarta yang berbeda.
+          </p>
+        </div>
+        <div class="w-full md:w-1/2">
+          <!-- Google Maps iframe -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63249.63264208737!2d110.15784996803646!3d-7.77900446347126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7af0f21b36c005%3A0xcbc8f4e3ec52b414!2sKec.%20Nanggulan%2C%20Kabupaten%20Kulon%20Progo%2C%20Daerah%20Istimewa%20Yogyakarta!5e0!3m2!1sid!2sid!4v1730641008532!5m2!1sid!2sid"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Section -->
+    <section
+      id="video"
+      class="h-screen flex items-center justify-center relative bg-cover bg-center"
+      style="background-image: url('assets/images/nanggulan-2.jpg')"
+    >
+      <!-- Dark overlay for 50% opacity -->
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+
+      <!-- Content within the overlay -->
+      <div class="container mx-auto px-6 text-center relative z-10">
+        <h2 class="text-3xl font-semibold mb-4">
+          Kenali Nanggulan Lebih Dekat
+        </h2>
+        <div class="flex justify-center">
+          <iframe
+            src="https://www.youtube.com/embed/9ajYxs9gqMs?si=0p_y_YDf7MHQCTYD"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            style="width: 80%; height: 450px"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kuliner Section -->
+    <section id="kuliner" class="py-20">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-semibold mb-10">Kuliner Khas Nanggulan</h2>
+        <p class="mt-4 mb-10">
+          Nikmati cita rasa otentik dari makanan tradisional yang hanya ada di
+          desa kami.
+        </p>
+
+        <!-- Card Container -->
+        <div class="flex flex-wrap justify-center gap-6">
+          <!-- Card 1 -->
+          <div
+            class="card-container bg-white rounded-lg overflow-hidden shadow-lg w-80"
+          >
+            <img
+              src="assets/images/mi-tini.jpeg"
+              alt="Mie Tini Legendaris"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-black">
+                Mie Tini Legendaris
+              </h3>
+              <a
+                href="https://wa.me/6287731500262"
+                target="_blank"
+                class="mt-2 inline-flex items-center bg-green-500 text-white py-2 px-4 rounded"
+              >
+                <img
+                  src="assets/svg/whatsapp-svgrepo-com.svg"
+                  alt="WhatsApp Logo"
+                  class="w-5 h-5 mr-2"
+                />
+                Hubungi via WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="card-container bg-white rounded-lg overflow-hidden shadow-lg w-80"
+          >
+            <img
+              src="assets/images/warung-makan-mbah-kebo.jpg"
+              alt="Warung Makan Mbah Kebo"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-black">
+                Warung Makan Mbah Kebo
+              </h3>
+              <a
+                href="https://wa.me/yourwhatsappnumber2"
+                target="_blank"
+                class="mt-2 inline-flex items-center bg-green-500 text-white py-2 px-4 rounded"
+              >
+                <img
+                  src="assets/svg/whatsapp-svgrepo-com.svg"
+                  alt="WhatsApp Logo"
+                  class="w-5 h-5 mr-2"
+                />
+                Hubungi via WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="card-container bg-white rounded-lg overflow-hidden shadow-lg w-80"
+          >
+            <img
+              src="assets/images/sate-kambing-mbah-margo.jpg"
+              alt="Sate Kambing Mbah Margo 1"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-black">
+                Sate Kambing Mbah Margo 1
+              </h3>
+              <a
+                href="https://wa.me/6281328772633"
+                target="_blank"
+                class="mt-2 inline-flex items-center bg-green-500 text-white py-2 px-4 rounded"
+              >
+                <img
+                  src="assets/svg/whatsapp-svgrepo-com.svg"
+                  alt="WhatsApp Logo"
+                  class="w-5 h-5 mr-2"
+                />
+                Hubungi via WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <!-- <div
+            class="card-container bg-white rounded-lg overflow-hidden shadow-lg w-80"
+          >
+            <img
+              src="assets/images/mi-tini.jpeg"
+              alt="Mie Tini Legendaris"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-black">
+                Mie Tini Legendaris
+              </h3>
+              <a
+                href="https://wa.me/yourwhatsappnumber4"
+                target="_blank"
+                class="mt-2 inline-flex items-center bg-green-500 text-white py-2 px-4 rounded"
+              >
+                <img
+                  src="assets/svg/whatsapp-svgrepo-com.svg"
+                  alt="WhatsApp Logo"
+                  class="w-5 h-5 mr-2"
+                />
+                Hubungi via WhatsApp
+              </a>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Wisata Section -->
+    <section
+      id="wisata"
+      class="min-h-[150vh] py-20 bg-cover bg-center relative"
+      style="background-image: url('assets/images/geblek-pari2.jpg')"
+    >
+      <!-- Dark overlay for 50% opacity -->
+      <div class="absolute inset-0 bg-black opacity-70"></div>
+
+      <!-- Content within the overlay -->
+      <div class="container mx-auto px-6 text-center relative z-10">
+        <h2 class="text-3xl font-semibold text-center">Destinasi Wisata</h2>
+        <p class="mt-4 text-center">
+          Ada banyak destinasi yang menunggu untuk dijelajahi
+        </p>
+
+        <!-- Swiper Carousel Container -->
+        <div class="swiper mySwiper mt-8">
+          <!-- Wrapper for Swiper Slides -->
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <a
+              href="https://maps.app.goo.gl/PExScBBFZdzn9Zbw8"
+              target="_blank"
+              class="swiper-slide relative group"
+            >
+              <img
+                src="assets/images/geblek-pari.jpg"
+                alt="Geblek Pari"
+                class="w-full h-64 object-cover rounded-lg shadow-md"
+              />
+              <h3
+                class="absolute bottom-4 left-4 text-2xl font-semibold text-white z-10"
+              >
+                Geblek Pari
+              </h3>
+              <div
+                class="absolute inset-0 bg-black bg-opacity-50 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center"
+              >
+                <p class="text-white text-center p-4">
+                  Restoran tradisional di Kulon Progo, Yogyakarta, yang
+                  menyajikan hidangan khas seperti geblek dan tempe koro sengek,
+                  dengan pemandangan hamparan sawah dan Bukit Menoreh yang
+                  menawan.
+                </p>
+              </div>
+            </a>
+
+            <!-- Slide 2 -->
+            <a
+              href="https://maps.app.goo.gl/tFnY2TYvi2F2vacD9"
+              target="_blank"
+              class="swiper-slide relative group"
+            >
+              <img
+                src="assets/images/mahaloka-paradise.jpg"
+                alt="Mahaloka Paradise"
+                class="w-full h-64 object-cover rounded-lg shadow-md"
+              />
+              <h3
+                class="absolute bottom-4 left-4 text-2xl font-semibold text-white z-10"
+              >
+                Mahaloka Paradise
+              </h3>
+              <div
+                class="absolute inset-0 bg-black bg-opacity-50 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center"
+              >
+                <p class="text-white text-center p-4">
+                  Kafe outdoor yang menawarkan pemandangan persawahan hijau dan
+                  perbukitan Menoreh, serta berbagai spot foto menarik dan
+                  kuliner lezat.
+                </p>
+              </div>
+            </a>
+
+            <!-- Slide 3 -->
+            <a
+              href="https://maps.app.goo.gl/eJy6DsokNkDV9Gk96"
+              target="_blank"
+              class="swiper-slide relative group"
+            >
+              <img
+                src="assets/images/geblek-menoreh-view.jpg"
+                alt="Geblek Menoreh View"
+                class="w-full h-64 object-cover rounded-lg shadow-md"
+              />
+              <h3
+                class="absolute bottom-4 left-4 text-2xl font-semibold text-white z-10"
+              >
+                Geblek Menoreh View
+              </h3>
+              <div
+                class="absolute inset-0 bg-black bg-opacity-50 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center"
+              >
+                <p class="text-white text-center p-4">
+                  Angkringan unik di Kulon Progo, Yogyakarta, yang menyajikan
+                  hidangan tradisional dengan pemandangan hamparan sawah hijau
+                  dan latar Pegunungan Menoreh yang memukau.
+                </p>
+              </div>
+            </a>
+
+            <!-- Slide 4 -->
+            <a
+              href="https://maps.app.goo.gl/yX1PoqBzkdcB2jTr9"
+              target="_blank"
+              class="swiper-slide relative group"
+            >
+              <img
+                src="assets/images/omah-cantrik.jpg"
+                alt="Omah Cantrik"
+                class="w-full h-64 object-cover rounded-lg shadow-md"
+              />
+              <h3
+                class="absolute bottom-4 left-4 text-2xl font-semibold text-white z-10"
+              >
+                Omah Cantrik
+              </h3>
+              <div
+                class="absolute inset-0 bg-black bg-opacity-50 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center"
+              >
+                <p class="text-white text-center p-4">
+                  Ruang kreatif berbasis budaya yang menghadirkan suasana
+                  tradisional Jawa dengan sentuhan modern untuk aktivitas seni,
+                  diskusi, dan pelatihan.
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+        <!-- End Swiper Carousel Container -->
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <!-- <section id="contact" class="py-20">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-semibold">Hubungi Kami</h2>
+        <p class="mt-4">
+          Hubungi kami untuk informasi lebih lanjut atau perencanaan kunjungan
+          Anda.
+        </p>
+      </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-6">
+      <div class="container mx-auto px-6 text-center">
+        <p>Dikembangkan oleh Tim KKN-PPM UGM 2024.</p>
+      </div>
+    </footer>
+
+    <!-- Tombol Kembali ke Atas -->
+    <a href="#" id="backToTop" class="fixed bottom-5 right-5 hidden">
+      <img
+        src="assets/svg/top-arrow-5-svgrepo-com.svg"
+        alt="Kembali ke Atas"
+        class="w-8 h-8"
+      />
+    </a>
+
+    <!-- Google Maps API -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+      async
+      defer
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
